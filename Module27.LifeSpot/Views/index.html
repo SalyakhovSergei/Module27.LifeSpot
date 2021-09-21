@@ -9,8 +9,7 @@
         //let session = handleSession();
         //sessionLog(session);
         //checkAge();
-        handleSession();
-        sessionLog();
+        handleSession(checkAgeFunc, logger);
         const inputParseFunction = function(){
             return document.getElementsByTagName('input')[0].value.toLowerCase();
         }
