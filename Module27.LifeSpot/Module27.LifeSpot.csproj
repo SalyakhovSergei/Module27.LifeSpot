@@ -4,4 +4,16 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\Data\london.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Data\ny.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Data\spb.jpg" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Data\Images\london.jpg" />
+      <Resource Include="Data\Images\ny.jpg" />
+      <Resource Include="Data\Images\spb.jpg" />
+    </ItemGroup>
+
 </Project>
