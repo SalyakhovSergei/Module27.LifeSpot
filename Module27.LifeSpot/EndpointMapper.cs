@@ -89,9 +89,9 @@ namespace Module27.LifeSpot
   
             foreach (var fileName in imgFiles)
             {
-                builder.MapGet($"/Data/Images/{fileName}", async context =>
+                builder.MapGet($"/Data/IMG/{fileName}", async context =>
                 {
-                    var imgPath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "Images", fileName);
+                    var imgPath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "IMG", fileName);
                     var img = await File.ReadAllTextAsync(imgPath);
                     await context.Response.WriteAsync(img);
                 });

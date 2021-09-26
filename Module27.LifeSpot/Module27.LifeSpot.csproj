@@ -11,9 +11,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Resource Include="Data\Images\london.jpg" />
-      <Resource Include="Data\Images\ny.jpg" />
-      <Resource Include="Data\Images\spb.jpg" />
+      <None Update="Data\london.jpg">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>

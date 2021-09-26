@@ -83,45 +83,33 @@ function addLike(id) {
     element.innerText = array.join(' ')
 }
 
-//var slides = document.querySelectorAll('#slides .slide')
-//var currentSlide = 0;
-//
-//function nextSlide() {
-//    goToSlide(currentSlide+1);
-//}
-//
-//function previousSlide() {
-//    goToSlide(currentSlide-1);
-//}
-//
-//function goToSlide(n) {
-//    slides[currentSlide].className = 'slide';
-//    currentSlide = (n+slides.length)%slides.length;
-//    slides[currentSlide].className = 'slide showing';
-//}
-//
-//
-//var next = document.getElementById('next');
-//var previous = document.getElementById('previous');
-//
-//next.onclick = function() {
-//    pauseSlideshow();
-//    nextSlide();
-//};
-//previous.onclick = function() {
-//    pauseSlideshow();
-//    previousSlide();
-//};
-//
-//var next = document.getElementById('next');
-//var previous = document.getElementById('previous');
-//
-//next.onclick = function() {
-//    pauseSlideshow();
-//    nextSlide();
-//};
-//previous.onclick = function() {
-//    pauseSlideshow();
-//    previousSlide();
-//};
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+        
+    if(n > slides.length){
+        slideIndex = 1
+    }
+    if (n < 1){
+        slideIndex=slides.length
+    }
+    for (i=0; i < slides.length; i++){
+        slides[i].style.display="none";
+    }
+    
+    slides[slideIndex-1].style.display = "block";
+        
+}
+
 

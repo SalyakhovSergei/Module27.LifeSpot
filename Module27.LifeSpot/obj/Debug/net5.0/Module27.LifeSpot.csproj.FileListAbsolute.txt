@@ -44,3 +44,4 @@ C:\Users\admin\RiderProjects\Module27.LifeSpot\Module27.LifeSpot\obj\Debug\net5.
 C:\Users\admin\RiderProjects\Module27.LifeSpot\Module27.LifeSpot\obj\Debug\net5.0\ref\Module27.LifeSpot.dll
 C:\Users\admin\RiderProjects\Module27.LifeSpot\Module27.LifeSpot\obj\Debug\net5.0\Module27.LifeSpot.pdb
 C:\Users\admin\RiderProjects\Module27.LifeSpot\Module27.LifeSpot\obj\Debug\net5.0\Module27.LifeSpot.genruntimeconfig.cache
+C:\Users\admin\RiderProjects\Module27.LifeSpot\Module27.LifeSpot\bin\Debug\net5.0\Data\london.jpg
