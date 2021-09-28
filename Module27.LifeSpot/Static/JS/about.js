@@ -83,15 +83,17 @@ function addLike(id) {
     element.innerText = array.join(' ')
 }
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    showSlides(slideIndex)
+
+} )
+
+
 var slideIndex = 1;
-showSlides(slideIndex);
 
 function plusSlides(n){
     showSlides(slideIndex += n);
-}
-
-function currentSlide(n){
-    showSlides(slideIndex = n);
 }
 
 function showSlides(n){
